@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body bgcolor="skyblue">
+        <form action="save.php" method="get">
+            <table align="center" cellpadding="15" bgcolor="white">
+                <caption>
+                    <h1> Contact us </h1>
+                </caption>
+                <tr>
+                    <td colspan="3">
+                        <font color="red"> The * marked field are mandatory </font>
+                    </td>
+                    <td> ref No <input type="number" Name="refno" value="234567" readonly/> </td>
+                </tr>
+                <tr> 
+                    <th> First Name <font color="red">*</font></th>
+                    <td> <input type="text" placeholder="Enter Your Frist Name" size="35" required maxlength="10" tabindex="1" name="fname"/></td>
+                    <th> Last Name </th>
+                    <td> <input type="text" placeholder="Enter Your Last Name"size="35" required maxlength="10" tabindex="2" name="lname"/> </td>
+                </tr>
+                <tr>
+                    <th> Email ID </th>
+                    <td> <input type="email" placeholder="Enter valid Email ID" size="35" required maxlength="50"/></td>
+                    <th> Mobile Number </th>
+                    <td> <input type="number" placeholder="Enter 10 digit Mobile Number" size="35" required maxlength="10" tabindex="3"/></td>
+                </tr>
+                <tr>
+                     <th> Your Massage <font color="red">*</font></th>
+                     <td colspan="3"> 
+                        <textarea cols="95" rows="10" placeholder="Enter Your Massage in 100 char max" required maxlength="100" tabindex="4"></textarea>
+                     </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        Terms % conditions<font color="red">*</font>
+                        <input type="checkbox" checked required tabindex="5" readonly value="Agree" name="tnc" /> I Agree....
+                        <br/>
+                        <details>
+                            <summary> Read More....</summary>
+                            <p\>
+                                dfg dfg dfg dfg dfg gfd dfg dfg dfg dfg dfg df gdf gdf gdf gdfg dfg dfg dfsg dfg dfg dfsg<br/> 
+                                dsf fds sdf sdf sdf sdf sdf dfs sdf sdf sdf sdf sdf sdf fds sdf sdf dsdfsdf sdf sdf sdf sdf<br/>
+                                dfg dfg dfg dfg dfg gfd dfg dfg dfg dfg dfg df gdf gdf gdf gdfg dfg dfg dfsg dfg dfg dfsg <br/>
+                                dsf fds sdf sdf sdf sdf sdf dfs sdf sdf sdf sdf sdf sdf fds sdf sdf dsdfsdf sdf sdf sdf sdf  
+                            </p>
+                        </details>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="4">
+                         <button type="submit"> Send Massage </button>
+                         <button type="reset"> Clear All </button>
+                    </th>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

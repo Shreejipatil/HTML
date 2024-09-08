@@ -1,0 +1,225 @@
+
+    1. syllabus + Flow of data in web application 
+    2. HTML - Rules(7) , example to clear the 7 rules of html.
+=====================================================================
+   HTML - Hypertext markup language 
+        - it has collections of pre-defined tag.
+        - it use to create basic structure of webpage.
+        - it has limited property and values. due to this limitation CSS + JS is required.
+        - it use to collect input from user and use to display output to user via web browser.
+
+  How it work ?
+     Responsive Webpage = HTML(tags) + CSS(property & value)
+
+    Responsive Webpage ? 
+        ->the page work in all size of window (mobile, tab, laptop, desktop) 
+
+  HTML Tag ?
+    <>   Open Tag 
+    </>  Close Tag 
+
+
+ Type of tag in HTML ?
+    1. Input tags    - it collect information from user via web browser 
+    2. Output Tags   - it display information to user via web browser
+
+The Structure / Syntax of html tags 
+    1. Dependent tag  - those html tags that open seprate and close seprate 
+        example 
+            <html> 
+                <head></head>
+                <body></body>
+            </html>
+
+    2. Independent tag  - those html tags that has only open
+        example 
+            <br>
+            <img> 
+        Note - React JSX Do not support Independent tag 
+
+    3. Self Closing Tag - those html tags that has open and close together
+        example 
+            <br/>
+            <img/> 
+        Note - It get supported by all js library and framework.
+
+The behavior of html tags ?
+      1. block level tag - those html tags, that print statement in new line by default 
+      2. inline tag    - those html tags, that print statement in same line (side by side) by default 
+
+    Note - Using CSS 
+           A. inline tag can convert into block level 
+           B. block level tag can convert into inline 
+           based on screen / window width  
+
+
+=============================================================
+    1. Tags 
+        ->input tag  - to collect input 
+        ->output tag - to display output 
+    2. Syntax 
+        ->dependent tag  - it has open and close seprate   - <h1>  </h1>
+        ->Independent tag - it has only open               - <br>  
+        ->self closing tag - it has open and close together - <br/>
+    3. behavior 
+        ->inline tag  - it print statement in same line - side by side - 
+        ->block level tag - it print statement in new line by default - 
+---------------------------------------------------------------
+   download instll vscode editor 
+================================================================
+    Type of extensions for html document ?
+        .html - seo friendly - good for digital marketing. 
+        .htm
+================================================================
+    <!DOCTYPE html>
+        =>it introduce to browser that what is type of current document. 
+        =>it introduce to browser that in current file html5 tags are also implemented, be ready to handle. 
+================================================================
+    Structure of html document ?
+        =>html start to end called root/parent element   
+            ->head 
+                ->marketing / digital marketing / Analytics / Other 
+                ->library section - CSS, JS, Other third party links 
+            ->body 
+                ->it is place for input & output 
+                ->need to use tags according contents
+-----------------------------------------------------------------
+    For responsive Web Page follow these rules .
+        1. the tag open 1st should get close in last 
+        2. the tag open in last should get close 1st 
+-----------------------------------------------------------------
+    Different name of html tags in other langauge / library/ framework 
+        1. <h1> - html =>tag 
+        2. <h1> - CSS  =>selector(6)
+        3. <h1> - JS   =>Element 
+        4. <h1> - React =>JSX Element 
+        5. <h1> - jquery =>Control 
+------------------------------------------------------------------
+    H1 TO H6 - it is called heading tag. 
+            it create headline of webpage.
+            The h1 should hold main keyword related to current that people search on internet 
+            h2 to h6 upto business need, any subheading can used with h2 to h6
+------------------------------------------------------------------
+    Type of list in html ?
+        1. UL - unorder list 
+              type="disc"
+              type="square"
+              type="circle"
+              type="none"
+
+        2. OL - Order List 
+              type="1"
+              type="A"
+              type="a"
+              type="I"
+              type="i"
+
+        3. DL - Definition list 
+            dt - definition title   - it create headline of content 
+            dd - definition details - it use to display details about the contents 
+---------------------------------------------------------------------
+    => Table in html ?
+         =>1st method 
+         ->table 
+            caption 
+            tr - table row 
+                th - table heading 
+                td - table data 
+    
+
+        =>2nd method - for angular + react 
+            ->table 
+                ->thead - it cover upper section of table 
+                    ->tr 
+                        ->th
+                ->tbody - it cover middle section of table 
+                    ->tr 
+                        ->td
+
+                ->tfoot - it cover bottom section of table
+                    ->tr 
+                        ->th 
+    
+    =>Property in table, tr, th, td 
+        ->align - (left, center, right, justify)
+        ->border - 
+        ->bordercolor - 
+        ->cellspacing - it apply space outside of th, td 
+        ->cellpadding - it apply space inside of th, td 
+    =>table1.html 
+   -------------------------------------------------------------
+    => How to link The Page 
+        <a href="" target="" > Text For link</a>
+
+         =><a is tag for making hyperlink
+         =>href is property that use to set path for next page 
+         =>target it define where the next page should open as new tab, blank tag , same tab , child tab ...
+            it is of 7 type where 6 are usefull 
+
+            Type of target ..?
+              1. using html 
+                 target="_self"    -> it open next page in same tab, it is default target
+                 target="_new"     -> it open next page in new tab nut every only 1st click
+                 target="_blank"   -> it open next page in new tab but every click
+
+            in javascript
+              2. target="_child"
+                 target="_parent"
+
+            in html frameset
+              3. target="userdefined"
+
+         =>title it introduce to search engine that what is purpose of this hyperlink 
+
+         home.html
+         about.html
+=====================================================================================
+    => input tags in html ?
+       1. Text - it collect alpha numeric value
+       2. number - it collect only number value
+       3. password - it collect secure data (opt, password)
+       4. email - it collect only email id
+       5. textarea - it collect multiline alpha numeric value 
+       6. date - it display date picker
+       7. file - it use to upload many type of file 
+       8. select - to select any option from given
+       9. checkbox - to collect 1 or miltiple input using checkbox
+       10. radio - to collect any one input from given option
+       11. button - for use action
+            -> submit - it send data to server
+            -> reset - it will clear the currect from
+            -> button - it work using javascript
+
+    => Property of input Elements
+        name - it creat a container in html that hold the value given by user.
+        selected - it make specific of option as default in select box 
+        rows - it increase the hight of textarea
+        cols - it increase the width of textarea
+
+        Placeholder-it is for input guidence
+        size - it reset the width of input tag (text,email,password)
+        maxlenght - it use to set limit of input that how many char user should write
+                     (text,email,password,textarea)
+        required - it make input element as required to fill.
+        readonly - it make input element readonly - unable to edit but value can pass to backend
+        disabled - it make input element fully disabled/locked , 
+                   user can not edit, value can not pass to backend
+        value    - it use to display default value in input tags.
+
+    =>form Tag
+         -> action - it use to the url of backend laungauge where the form data will get submitted
+         -> method - it define the type of communication between client and server
+                get - fully unsecure communication
+                post - fully unsecure communication
+                patch -it send a update request to backend but only modified value
+                put - it send a update request to backend but for full update
+                delete - it send a delete request to backend for specific record.
+
+    =>difference between submit and reset button 
+        -> submit button will post data from data to action page
+        -> reset button it clear all element in form tag
+        -> button - it need js to work
+    
+--------------------------------------------------------------------------------------
+
+     
